@@ -72,6 +72,18 @@
                     <a href="{{ url('/register') }}">Register</a>
                 </div>
             @endif
+
+            <div class="content">
+                <div class="title m-b-md">
+                        Welcome 
+
+                        @foreach ($tasks as $task)
+                            {{ $task }}
+                        @endforeach
+                </div>
+            </div>
         </div>
+
+        
     </body>
 </html>

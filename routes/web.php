@@ -16,5 +16,8 @@ Route::get('/', function () {
 });
 
 Route::get('about', function () {
-	return view('about');
+
+	$tasks = ['A','B','C'];
+
+	return view('about', compact('tasks'));
 });
